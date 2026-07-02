@@ -24,13 +24,13 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "First Name : " + firstName +
-               "\nLast Name : " + lastName +
-               "\nAddress : " + address +
-               "\nCity : " + city +
-               "\nState : " + state +
-               "\nZip : " + zip +
-               "\nPhone Number : " + phoneNumber +
-               "\nEmail : " + email;
+        return "\nFirst Name : " + firstName +
+                "\nLast Name : " + lastName +
+                "\nAddress : " + address +
+                "\nCity : " + city +
+                "\nState : " + state +
+                "\nZip : " + zip +
+                "\nPhone : " + phoneNumber +
+                "\nEmail : " + email;
     }
 }

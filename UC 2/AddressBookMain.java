@@ -1,8 +1,11 @@
-import java.util.*;
-public class Main {
+import java.util.Scanner;
+
+public class AddressBookMain {
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        AddressBook addressBook = new AddressBook();
 
         System.out.print("Enter First Name: ");
         String firstName = sc.nextLine();
@@ -28,11 +31,21 @@ public class Main {
         System.out.print("Enter Email: ");
         String email = sc.nextLine();
 
-        Contact contact = new Contact(firstName, lastName, address,
-                                      city, state, zip, phone, email);
+        Contact contact = new Contact(
+                firstName,
+                lastName,
+                address,
+                city,
+                state,
+                zip,
+                phone,
+                email
+        );
 
-        System.out.println("\n----- Contact Details -----");
-        System.out.println(contact);
+        addressBook.addContact(contact);
+
+        System.out.println("\n----- Address Book -----");
+        addressBook.displayContacts();
 
         sc.close();
     }

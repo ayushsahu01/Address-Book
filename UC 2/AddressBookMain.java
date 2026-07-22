@@ -41,7 +41,6 @@ public class AddressBookMain {
                 phone,
                 email
         );
-
         addressBook.addContact(contact);
 
         System.out.println("\n----- Address Book -----");

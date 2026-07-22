@@ -6,6 +6,7 @@ public class AddressBook {
 
     public void addContact(Contact contact) {
         contacts.add(contact);
+        
         System.out.println("Contact Added Successfully!");
     }
 
